@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && ng build --prod && cd .. && node app.js "
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +14,10 @@
     "bootstrap": "^4.4.1",
     "css": "^2.2.4",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "fs": "0.0.1-security",
     "json-parser": "^3.1.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "request": "^2.88.2"
   }
 }

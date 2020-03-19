@@ -9,12 +9,12 @@ import { PersonalComponent } from './personal/personal/personal.component';
 
 
 const routes: Routes = [
-  {path:'about',component:AboutComponent},
-  {path:'education',component:EducationComponent},
-  {path:'experience',component:ExperienceComponent},
-  {path:'skills',component:SkillsComponent},
-  {path:'projects',component:ProjectsComponent},
-  {path:'personal-info',component:PersonalComponent},
+  {path:'about',component:AboutComponent,data:{animation:'About'}},
+  {path:'education',component:EducationComponent,data:{animation:'Education'}},
+  {path:'experience',component:ExperienceComponent,data:{animation:'Experience'}},
+  {path:'skills',component:SkillsComponent,data:{animation:'Skills'}},
+  {path:'projects',component:ProjectsComponent,data:{animation:'Projects'}},
+  {path:'personal-info',component:PersonalComponent,data:{animation:'PerasonalInfo'}},
 ];
 
 @NgModule({

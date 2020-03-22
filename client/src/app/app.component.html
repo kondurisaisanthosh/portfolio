@@ -6,36 +6,51 @@
   <meta name="description" content="">
   <meta name="author" content="">
 </head>
-
 <body>
-  <nav class="navbar navbar-light bg-light justify-content-between">
-    <a href="./about/ç" class="navbar-brand"><b>Home</b></a>
-    <form class="form-inline">
-      <button class="btn btn-primary btn-sm button">Github</button>
-      <button class="btn btn-primary btn-sm button">Linked in</button>
-    </form>
-  </nav>
-  <div class="d-flex text-primary " id="wrapper">
-    <div class="bg-light border-right sb-color" id="sidebar-wrapper">
-      <img src="../assets/user.png" class="rounded-circle padding-bottom-md padding-top-md padding-left-md" width="200" height="200">
-      <div class="sidebar-heading"><h5>Konduri Sai Santhosh</h5> </div>
-      <div class="sidebar-heading"><h6>University at Albany</h6> </div>
-      <hr class="style1">
-      
-      <div class="list-group list-group-flush">
-        <a [routerLink]="['/about']" routerLinkActive="router-link-active"  class="list-group-item list-group-item-action bg-light"><b>About</b></a>
-        <a [routerLink]="['/education']" routerLinkActive="router-link-active"  class="list-group-item list-group-item-action bg-light"><b>Education</b></a>
-        <a [routerLink]="['/experience']" routerLinkActive="router-link-active" class="list-group-item list-group-item-action bg-light"><b>Experience</b></a>
-        <a [routerLink]="['/skills']" routerLinkActive="router-link-active" class="list-group-item list-group-item-action bg-light"><b>Skills</b></a>
-        <a [routerLink]="['/projects']" routerLinkActive="router-link-active" class="list-group-item list-group-item-action bg-light"><b>Projects</b></a>
-        <a [routerLink]="['/personal-info']" routerLinkActive="router-link-active" class="list-group-item list-group-item-action bg-light"><b>Personal-info</b></a>
+  <div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- <a class="navbar-brand" href="./"><b>Home</b></a> -->
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active"  class="navbar-brand "><b>Home</b></a>
+
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item ">
+            <a [routerLink]="['/about']" routerLinkActive="router-link-active"  class="nav-link "><b>About</b></a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/education']" routerLinkActive="router-link-active"  class="nav-link "><b>Education</b></a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/experience']" routerLinkActive="router-link-active"  class="nav-link "><b>Experience</b></a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/skills']" routerLinkActive="router-link-active"  class="nav-link "><b>Skills</b></a>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/projects']" routerLinkActive="router-link-active"  class="nav-link "><b>Projects</b></a>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a [routerLink]="['/personal-info']" routerLinkActive="router-link-active"  class="nav-link "><b>Personal-info</b></a>
+          </li> -->
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <img src="../assets/git.png" class=" img-rounded m-2.5" width="50" height="50"> 
+          <img src="../assets/download.png" class=" img-rounded" width="50" height="50"> 
+        </form>
+      </div>
+    </nav>
+    <div  >
+      <img src="./assets/sliders1-1.jpg" alt="Not found" class="watermark">
+      <div class="container-fluid text" [@routeAnimations]="o && o.activatedRouteData  && o.activatedRouteData['animation']">
+        <router-outlet #o="outlet"></router-outlet>
       </div>
 
     </div>
-    <div class="container-fluid" [@routeAnimations]="o && o.activatedRouteData  && o.activatedRouteData['animation']">
-      <router-outlet #o="outlet"></router-outlet>
-    </div>
-
   </div>
 </body>
 

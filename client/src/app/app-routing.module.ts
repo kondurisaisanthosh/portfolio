@@ -6,9 +6,12 @@ import { ExperienceComponent } from './experience/experience/experience.componen
 import { SkillsComponent } from './skills/skills/skills.component';
 import { ProjectsComponent } from './projects/projects/projects.component';
 import { PersonalComponent } from './personal/personal/personal.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
+  
+  {path:'home',component:HomeComponent,data:{animation:'Home'}},
   {path:'about',component:AboutComponent,data:{animation:'About'}},
   {path:'education',component:EducationComponent,data:{animation:'Education'}},
   {path:'experience',component:ExperienceComponent,data:{animation:'Experience'}},

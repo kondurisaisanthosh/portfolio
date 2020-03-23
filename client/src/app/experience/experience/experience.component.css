@@ -1,0 +1,18 @@
+section {
+    border:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border:0px solid gray;
+    max-width: 1300px;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: cursive;
+}

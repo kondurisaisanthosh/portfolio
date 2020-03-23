@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'experience',component:ExperienceComponent,data:{animation:'Experience'}},
   {path:'skills',component:SkillsComponent,data:{animation:'Skills'}},
   {path:'projects',component:ProjectsComponent,data:{animation:'Projects'}},
-  {path:'personal-info',component:PersonalComponent,data:{animation:'PerasonalInfo'}},
+  {path:'Accomplishments',component:PersonalComponent,data:{animation:'PerasonalInfo'}},
 ];
 
 @NgModule({

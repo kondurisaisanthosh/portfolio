@@ -6,13 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd client && ng build --prod && cd .. && node app.js ",
-    "deploy":"gh-pages -d client/dist"
+    "deploy":"gh-pages -d client/dist/portfolio/index.html"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://kondurisaisanthosh.github.io/portfolio/index.html",
+  "homepage": "https://kondurisaisanthosh.github.io/portfolio",
   "dependencies": {
-    "gh-pages": "2.2.0",
+    "gh-pages": "2.2.0","ls-countup": "1.2.5",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "css": "^2.2.4",

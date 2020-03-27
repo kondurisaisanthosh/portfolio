@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd client && ng build --prod && cd .. && node app.js ",
-    "deploy":"gh-pages -d client/dist/portfolio"
+    "deploy":"gh-pages -d client/dist"
   },
   "author": "",
   "license": "ISC",

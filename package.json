@@ -13,7 +13,7 @@
   "homepage": "https://kondurisaisanthosh.github.io/portfolio",
   "dependencies": {
     "gh-pages": "2.2.0","ls-countup": "1.2.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "css": "^2.2.4",
     "express": "^4.17.1",
